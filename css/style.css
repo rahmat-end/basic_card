@@ -1,0 +1,102 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin: auto;
+}
+.container .welcome h1 {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 24px;
+}
+.container .welcome p.title {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.container .welcome p.button {
+    margin: 10px 0;
+}
+.container .welcome p.button a {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 130px;
+    padding: 0.5vw 0;
+    border-radius: 50px;
+    background: black;
+    outline: 2px solid black;
+    cursor: pointer;
+}
+.container .welcome p.button a:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.container .welcome p.button a.white {
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+}
+.container .welcome p.button a.white:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.container .welcome > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.container .welcome > a p {
+    margin: 10px 10px 10px 0;
+}
+.container .social-media {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.container .social-media .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+.container .social-media .icon a .fa-brands {
+    color: black;
+    font-size: 30px;
+}
+.container .photo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 270px;
+}
+.container .photo-card .thumb img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container .photo-card .title {
+    text-align: center;
+}
+.container .photo-card .title h1 {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.container .photo-card .title p {
+    margin-top: 5px;
+}
