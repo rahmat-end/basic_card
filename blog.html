@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+        <link rel="icon" type="image/png" href="./image/emyu.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>Blog Page</title>
+        <link rel="stylesheet" href="./css/blog.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="image/logo.png" alt="logo" />
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+        <div class="blog">
+            <div class="blog-form">
+                <div class="form-container">
+                    <form onsubmit="addBlog(event)">
+                        <h1>ADD MY PROJECT</h1>
+                        <div>
+                            <label for="input-blog-project">Project Name</label>
+                            <input type="text" id="input-blog-project" />
+                        </div>
+                        <div>
+                            <label for="input-blog-startDate">Start Date</label>
+                            <input type="date" id="input-blog-startDate" />
+                        </div>
+                        <div>
+                            <label for="input-blog-endDate">End Date</label>
+                            <input type="date" id="input-blog-endDate" />
+                        </div>
+                        <div>
+                            <label for="input-blog-description">Description</label>
+                            <textarea id="input-blog-description"></textarea>
+                        </div>
+                        <div>
+                            <label for="">Technologies</label><br>
+                            <input type="checkbox" name="input-blog-checkbox" id="input-blog-checkbox" value="">
+                            <label for="input-blog-checkbox">Node Js</label>
+                            <input type="checkbox" name="input-blog-checkbox" id="input-blog-checkbox" value="">
+                            <label for="input-blog-checkbox">React Js</label>
+                            <input type="checkbox" name="input-blog-checkbox" id="input-blog-checkbox" value="">
+                            <label for="input-blog-checkbox">Next Js</label>
+                            <input type="checkbox" name="input-blog-checkbox" id="input-blog-checkbox" value="">
+                            <label for="input-blog-checkbox">TypeScript</label>
+                        </div>
+                        <div>
+                            <label>Upload Image</label>
+                            <div class="input-blog-image-group">
+                                <label for="input-blog-image">
+                                    <p>Upload Image</p>
+                                    <img src="image/file.png" />
+                                </label>
+                                <input type="file" id="input-blog-image" hidden />
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr />
+            <div id="contents" class="blog-list">
+                <!-- dynamic content would be here -->
+                <div class="blog-list-item">
+                    <div class="thumb">
+                        <img src="./image/react code.jpeg" alt="Thumbnail">
+                    </div>
+                    <h4>
+                        <a href="blog-detail.html">Dumbways Mobile App - 2021</a>
+                    </h4>
+                    <p class="duration">durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can be downloaded on playstore. Happy download</p>
+                    <div class="icon-technology">
+                        <i class="fa-brands fa-node-js"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-solid fa-diagram-next"></i>
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-blog">edit</button>
+                        <button class="btn-blog">delete</button>
+                    </div>
+                </div>
+                <div class="blog-list-item">
+                    <div class="thumb">
+                        <img src="./image/react code.jpeg" alt="Thumbnail">
+                    </div>
+                    <h4>
+                        <a href="blog-detail.html">Dumbways Mobile App - 2021</a>
+                    </h4>
+                    <p class="duration">durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can be downloaded on playstore. Happy download</p>
+                    <div class="icon-technology">
+                        <i class="fa-brands fa-node-js"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-solid fa-diagram-next"></i>
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-blog">edit</button>
+                        <button class="btn-blog">delete</button>
+                    </div>
+                </div>
+                <div class="blog-list-item">
+                    <div class="thumb">
+                        <img src="./image/react code.jpeg" alt="Thumbnail">
+                    </div>
+                    <h4>
+                        <a href="blog-detail.html">Dumbways Mobile App - 2021</a>
+                    </h4>
+                    <p class="duration">durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can be downloaded on playstore. Happy download</p>
+                    <div class="icon-technology">
+                        <i class="fa-brands fa-node-js"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-solid fa-diagram-next"></i>
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-blog">edit</button>
+                        <button class="btn-blog">delete</button>
+                    </div>
+                </div>
+                <div class="blog-list-item">
+                    <div class="thumb">
+                        <img src="./image/react code.jpeg" alt="Thumbnail">
+                    </div>
+                    <h4>
+                        <a href="blog-detail.html">Dumbways Mobile App - 2021</a>
+                    </h4>
+                    <p class="duration">durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can be downloaded on playstore. Happy download</p>
+                    <div class="icon-technology">
+                        <i class="fa-brands fa-node-js"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-solid fa-diagram-next"></i>
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-blog">edit</button>
+                        <button class="btn-blog">delete</button>
+                    </div>
+                </div>
+                <div class="blog-list-item">
+                    <div class="thumb">
+                        <img src="./image/react code.jpeg" alt="Thumbnail">
+                    </div>
+                    <h4>
+                        <a href="blog-detail.html">Dumbways Mobile App - 2021</a>
+                    </h4>
+                    <p class="duration">durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can be downloaded on playstore. Happy download</p>
+                    <div class="icon-technology">
+                        <i class="fa-brands fa-node-js"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-solid fa-diagram-next"></i>
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-blog">edit</button>
+                        <button class="btn-blog">delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/blog.js"></script>
+    </body>
+</html>
