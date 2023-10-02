@@ -50,7 +50,7 @@ nav ul li .active {
 }
 
 .nav-right a {
-  background-color: orangered;
+  background-color: #111727;
   padding: 8px 25px;
   color: white;
   border-radius: 5px;
@@ -59,6 +59,7 @@ nav ul li .active {
 /* blog form */
 .blog-form {
   padding: 50px 0;
+  background-color: #E3E7EB;
   display: flex;
   justify-content: center;
 }
@@ -86,7 +87,7 @@ select {
   padding: 8px;
   margin-top: 5px;
   margin-bottom: 20px;
-  background: #f4f3f3;
+  background: #FFFFFF;
   border: 1px solid #c4c4c4;
   border-radius: 8px;
   resize: none;
@@ -110,10 +111,7 @@ select {
   border: 1px solid #c4c4c4;
   border-radius: 8px;
   cursor: pointer;
-}
-
-.blog-form form .input-blog-image-group label p {
-  font-size: 15px;
+  padding: 0;
 }
 
 .blog-form form .input-blog-image-group label {
@@ -124,20 +122,42 @@ select {
   padding: 8px;
 }
 
+.blog-form form .input-blog-image-group label input {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.blog-form .button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blog-form .button-group button {
+  padding: 8px 30px;
+  border-radius: 30px;
+  border: 0;
+  background: #111727;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .blog hr {
   border: 1px solid #dbdbdb;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .blog .blog-list {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #F8F8F8;
 }
 
 .blog .blog-list .blog-list-item {
@@ -148,10 +168,6 @@ select {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-}
-
-.blog .blog-list .blog-list-item .thumb {
-  
 }
 
 .blog .blog-list .blog-list-item .thumb img {
@@ -174,11 +190,33 @@ select {
 
 .blog .blog-list .blog-list-item .icon-technology {
   margin: 18px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .blog .blog-list .blog-list-item .icon-technology i {
   font-size: 25px;
   margin: 0 10px;
+  display: none;
+}
+
+.blog .blog-list .blog-list-item .icon-technology i.show {
+  display: inline-block;
+}
+
+.blog .blog-list .blog-list-item .icon-technology img  {
+  width: 24px;
+  margin: 0 10px;
+  display: none;
+}
+
+.blog .blog-list .blog-list-item .icon-technology img.next  {
+  width: 85px;
+}
+
+.blog .blog-list .blog-list-item .icon-technology img.show  {
+  display: inline-block; 
 }
 
 .blog .blog-list .blog-list-item .icon-technology i:first-of-type {

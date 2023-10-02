@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  /* flex container */
+  background-color: #ebeaea;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+nav ul li .active {
+  color: orangered;
+}
+
+.nav-left {
+  /* flex item */
+  flex: 50%; /* mengatur lebarnya */
+  /* background-color: red; */
+}
+
+.nav-right {
+  /* flex item */
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+  /* background-color: blue; */
+}
+
+.nav-right a {
+  background-color: #111727;
+  padding: 8px 25px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* blog detail */
+.blog-detail {
+    background-color: #E3E7EB;
+    padding: 30px 60px;
+}
+.blog-detail h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.blog-detail .blog-detail-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+.blog-detail .blog-detail-item .thumb {
+    width: 55%;
+    margin-right: 25px;
+}
+.blog-detail .blog-detail-item .thumb img {
+    width: 100%;
+}
+.blog-detail .blog-detail-item .information {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+.blog-detail .blog-detail-item .information .information-items {
+    margin-bottom: 15px;
+}
+.blog-detail .blog-detail-item .information .information-items h5 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+.blog-detail .blog-detail-item .information .information-items .information-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.blog-detail .blog-detail-item .information .information-items .information-list .information-item {
+    margin: 15px 15px 15px 0;
+}
+.blog-detail .blog-detail-item .information .information-items .information-list .information-item i {
+    margin-right: 10px;
+    font-size: 25px;
+}
+.blog-detail .blog-detail-item .information .information-items .information-list .information-item img {
+    width: 24px;
+    margin-right: 10px;
+}
+.blog-detail .blog-detail-item .information .information-items .information-list .information-item img.next {
+    width: 85px;
+}
+.blog-detail .blog-detail-item .information .information-items .information-list .information-item span {
+    
+}
+.blog-detail > p {
+    text-align: justify;
+    line-height: 2;
+}

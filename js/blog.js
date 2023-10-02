@@ -114,9 +114,14 @@ function addBlog(event) {
   event.preventDefault();
 
   let project = document.getElementById("input-blog-project").value;
-  let startDate = document.getElementById("input-blog-startDate").value;
-  let endDate = document.getElementById("input-blog-endDate").value;
+  let startDate = new Date(document.getElementById("input-blog-startDate").value);
+  let endDate = new Date(document.getElementById("input-blog-endDate").value);
+  let duration = monthDiff(startDate, endDate);
   let description = document.getElementById("input-blog-description").value;
+  let checkbox1 = document.getElementById("input-blog-checkbox1").checked;
+  let checkbox2 = document.getElementById("input-blog-checkbox2").checked;
+  let checkbox3 = document.getElementById("input-blog-checkbox3").checked;
+  let checkbox4 = document.getElementById("input-blog-checkbox4").checked;
   let image = document.getElementById("input-blog-image").files;
 
   // untuk membuat url gambar, agar image dapat ditampilkan
@@ -127,7 +132,12 @@ function addBlog(event) {
     project,
     startDate,
     endDate,
+    duration,
     description,
+    checkbox1,
+    checkbox2,
+    checkbox3,
+    checkbox4,
     image,
   };
 
@@ -151,19 +161,26 @@ function renderBlog() {
                     <h4>
                         <a href="blog-detail.html">${dataBlog[index].project}</a>
                     </h4>
-                    <p class="duration">${dataBlog[index].startDate} | ${dataBlog[index].endDate}</p>
+                    <p class="duration">durasi : ${dataBlog[index].duration} bulan</p>
                     <p>${dataBlog[index].description}</p>
                     <div class="icon-technology">
-                        <i class="fa-brands fa-node-js"></i>
-                        <i class="fa-brands fa-react"></i>
-                        <i class="fa-solid fa-diagram-next"></i>
-                        <i class="fa-solid fa-keyboard"></i>
+                        ${(dataBlog[index].checkbox1 ? `<i class="fa-brands fa-node-js show"></i>` : `<i class="fa-brands fa-node-js"></i>`)}
+                        ${(dataBlog[index].checkbox2 ? `<i class="fa-brands fa-react show"></i>` : `<i class="fa-brands fa-react"></i>`)}
+                        ${(dataBlog[index].checkbox3 ? `<img src="./image/Nextjs-logo.svg.png" class="next show" alt="Next Js">` : `<img src="./image/Nextjs-logo.svg.png" class="next" alt="Next Js">`)}
+                        ${(dataBlog[index].checkbox4 ? `<img src="./image/Typescript_logo_2020.svg.png" class="show" alt="TypeScript">` : `<img src="./image/Typescript_logo_2020.svg.png" alt="TypeScript">`)}
                     </div>
                     <div class="btn-group">
                         <button class="btn-blog">edit</button>
                         <button class="btn-blog">delete</button>
                     </div>
-                </div>
-    `;
+                </div>`;
   }
+}
+
+function monthDiff(startDate, endDate) {
+    let months;
+    months = (endDate.getFullYear() - startDate.getFullYear()) * 12;
+    months -= startDate.getMonth();
+    months += endDate.getMonth();
+    return months <= 0 ? 0 : months;
 }
