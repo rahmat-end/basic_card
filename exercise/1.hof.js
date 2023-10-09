@@ -6,7 +6,7 @@ arr.forEach(function (item) {
 
 // map
 const arr2 = [1, 2, 3, 4, 5];
-const doubled = arr2.map((item) => {
+const doubled = arr2.map((item) => { 
   return item * 2;
 });
 

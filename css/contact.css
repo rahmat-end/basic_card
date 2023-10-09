@@ -132,12 +132,16 @@ button:hover {
     border: 1px solid #fff;
   }
   
-  @media only screen and (max-width: 980px) { /*bugs with max width is here 550*/
+  @media only screen and (max-width: 550px) {
     .item-collapse {
       display: none;
     }
   
     #barsmenu {
       display: block;
+    }
+
+    form div {
+        width: 100%;
     }
   }
