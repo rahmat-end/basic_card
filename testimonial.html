@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="css/testimonial.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <img src="image/logo.png" alt="logo" />
+          </li>
+          <li class="item-collapse">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="item-collapse">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="item-collapse">
+            <a class="active" href="testimonial.html">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right item-collapse">
+        <a href="contact.html">Contact Me</a>
+      </div>
+      <div class="nav-right" id="barsmenu">
+        <button style="background-color: transparent; border: none; cursor: pointer" onclick="openHamburger()">
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact Me</a>
+      <a href="testimonial.html" class="hamburger-active">Testimonial</a>
+    </div>
+    <div class="container">
+      <h1>My Testimonial</h1>
+      <div class="container-rating">
+        <h2>Rating By Star</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="allTestimonial()">All</button>
+          <button class="rating-btn" onclick="filterTestimonial(1)">
+            1 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonial(2)">
+            2<i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonial(3)">
+            3 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonial(4)">
+            4 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonial(5)">
+            5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
+      <section class="testimonials" id="testimonials">
+        <!-- <div class="testimonial">
+          <img
+            class="profile-testimonial"
+            src="https://images.unsplash.com/photo-1696246847440-bb0047ba93ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            alt="profile"
+          />
+          <p class="quote">Jasa yang mantap!</p>
+          <p class="author">- Abel Dustin</p>
+        </div> -->
+      </section>
+    </div>
+    <script src="js/testimonial.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

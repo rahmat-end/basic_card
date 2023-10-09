@@ -330,3 +330,67 @@ select {
   line-height: 140%;
   text-align: justify;
 }
+#barsmenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: #fff;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.hamburger-nav-container div a:hover {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+  .blog .blog-list .blog-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog .blog-list .btn-group {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .blog-form .form-container {
+    width: 90%;
+  }
+
+  .blog-form form input, textarea, select {
+    padding: 8px 0 8px 8px;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}

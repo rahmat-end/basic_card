@@ -17,18 +17,32 @@
                   <li>
                       <img src="image/logo.png" alt="logo" />
                   </li>
-                  <li>
+                  <li class="item-collapse">
                       <a class="active" href="index.html">Home</a>
                   </li>
-                  <li>
+                  <li class="item-collapse">
                       <a href="blog.html">Blog</a>
                   </li>
+                  <li class="item-collapse">
+                    <a href="testimonial.html">Testimonial</a>
+                </li>
               </ul>
           </div>
-          <div class="nav-right">
-              <a href="contact.html">Contact Me</a>
+          <div class="nav-right item-collapse">
+            <a href="contact.html">Contact Me</a>
+          </div>
+          <div class="nav-right" id="barsmenu">
+            <button style="background-color: transparent; border: none; cursor: pointer" onclick="openHamburger()">
+              <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
           </div>
         </nav>
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+          <a href="index.html" class="hamburger-active">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Me</a>
+          <a href="testimonial.html">Testimonial</a>
+        </div>
         <div class="outer-container">
           <div class="container">
             <div class="welcome">
@@ -78,5 +92,6 @@
             </div>
           </div>
         </div>
+        <script src="js/index.js"></script>
     </body>
 </html>
