@@ -57,6 +57,7 @@ nav ul li .active {
     align-items: center;
     justify-content: center;
     background-color: #E3E7EB;
+    height: 90vh;
 }
 
 form div {
@@ -131,6 +132,12 @@ button:hover {
     padding: 10px;
     border: 1px solid #fff;
   }
+
+  @media only screen and (max-width: 900px) {
+      select {
+          height: 42px;
+      }
+  }
   
   @media only screen and (max-width: 550px) {
     .item-collapse {
@@ -142,6 +149,6 @@ button:hover {
     }
 
     form div {
-        width: 100%;
+        width: 350px;
     }
   }
