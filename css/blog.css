@@ -379,12 +379,12 @@ select {
 
 @media only screen and (max-width: 550px) {
   .blog-form .form-container {
-    width: 350px;
+    width: calc(350px - 10vw);
   }
 
   .blog-form form input, textarea, select {
     padding: 8px 0;
-    width: 350px;
+    width: calc(350px - 10vw);
     /* width: calc(90vw - 1em); */
   }
 
