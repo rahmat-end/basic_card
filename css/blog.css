@@ -379,12 +379,12 @@ select {
 
 @media only screen and (max-width: 550px) {
   .blog-form .form-container {
-    width: 90%;
+    width: 350px;
   }
 
   .blog-form form input, textarea, select {
     padding: 8px 0;
-    width: 90vw;
+    /* width: calc(90vw - 1em); */
   }
 
   .item-collapse {
